@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regrinha de três</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="">
+        <h1>Regrinha de Três</h1>
+        <div class="primeira">
+            <div class="renk">
+             <label for="n1">Primeira Grandeza</label>
+            <input type="number" name="n1" id="n1">
+            </div>
+           <div class="renk">
+             <label for="n2">Segunda Grandeza</label>
+            <input type="number" name="n2" id="n2">
+           </div>
+           
+        </div>
+        <div class="segunda">
+            <label for="n3"></label>
+            <input type="number" name="n3" id="n3">
+            <label for="x"></label>
+            <input type="number" name="x" id="x" disabled placeholder="      X">
+        </div>
+
+        <div class="tipo">
+            <input type="radio" value="Inversamente" id="ip" name="Proporcional">
+            <label for="ip">Inversamente P.</label>
+        
+        <input type="radio" value="Proporcional" id="proporcional" name="Proporcional" >
+        <label for="proporcional">Proporcional</label>
+        
+         </div>
+
+        <div class="resultado">
+                <label for="resp">Resultado</label>
+                 <input class="resultadinho" type="text"  id="resp" name="resp" disabled onclick="proporcoes()" >
+             </div>
+           
+             <div class="buttons">
+             <input  class="butt" type="button" value="Enviar" id="Enviar" name="Enviar" onclick="proporcoes()">
+             <input type="reset" value="Limpar" id="Limpar" name="Limpar"class="butt">
+             
+             </div>
+        
+    </form>
+</body>
+</html>
